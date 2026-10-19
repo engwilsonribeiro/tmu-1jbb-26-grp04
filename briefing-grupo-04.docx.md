@@ -96,3 +96,37 @@ Checklist de validação
 
 * [Link do Figma](https://www.figma.com/design/vFE6OxnqDyU6ENuizCBPbN/Sem-t%C3%ADtulo?node-id=0-1&t=VnqNZU2LipuD7JJJ-1)
 
+---
+
+10\. Rubrica de maturidade do projeto — linha do tempo
+
+Os percentuais representam marcos ordenados de maturidade, não uma medição matemática de conclusão. Um marco só deve ser considerado concluído quando seus critérios forem atendidos e houver evidências verificáveis. Atualizem o estágio conforme o projeto avance.
+
+> **🔵 ESTÁGIO ATUAL: 20% — Identidade visual e direção de arte em andamento.**
+>
+> **Último marco concluído: 10% — Briefing e escopo inicial.** O documento registra problema, público, persona, objetivo, navegação e decisões visuais. Ainda estão pendentes a definição da fonte para textos pequenos e a seleção das imagens dos tênis. O link do Figma está registrado, mas seu conteúdo não foi verificado; o `index.html` inspecionado contém apenas a estrutura inicial vazia.
+
+**Linha do tempo:** ✅ 0% → ✅ 10% → 🔵 **20% atual** → ⬜ 30% → ⬜ 40% → ⬜ 50% → ⬜ 60% → ⬜ 70% → ⬜ 80% → ⬜ 90% → ⬜ 100%
+
+| Marco | Etapa | Critério para avançar | Evidência registrada ou lacuna | Situação |
+| :---- | :---- | :---- | :---- | :---- |
+| **0%** | Início e definição do projeto | Projeto, equipe e objetivo inicial identificados. | O briefing identifica o Grupo 4, o negócio Sneakers Toon e a proposta de uma plataforma web. | ✅ Concluído |
+| **10%** | Briefing e escopo inicial | Problema, público, solução e objetivo do projeto registrados. | O documento descreve a necessidade de personalização, o público jovem, uma persona e o objetivo do site. | ✅ Concluído |
+| **20%** | Identidade visual e direção de arte | Direção visual definida e principais elementos visuais selecionados para uso no projeto. | O briefing registra nome, slogan, logomarca, cores e tipografia principal. A fonte para textos pequenos e as imagens dos tênis continuam pendentes; os arquivos visuais não foram inspecionados. | 🔵 Em andamento |
+| **30%** | Requisitos e arquitetura detalhados | Páginas, conteúdo e funcionalidades descritos de forma verificável e coerente com a jornada. | O menu, a jornada e algumas chamadas para ação estão documentados; falta detalhar o conteúdo e os requisitos de cada uma das seis páginas planejadas. | ⬜ Pendente |
+| **40%** | Estrutura inicial do protótipo | Fluxos e estrutura das páginas representados no Figma, incluindo a navegação principal. | Há um link do Figma no briefing, mas não há evidência inspecionada do conteúdo ou dos fluxos. | ⬜ Pendente de evidência |
+| **50%** | Protótipo visual no Figma | As seis páginas planejadas representadas com conteúdo e identidade visual aplicados. | Não foi possível verificar telas ou a cobertura das seis páginas. | ⬜ Pendente de evidência |
+| **60%** | Protótipo validado e ajustes definidos | Protótipo revisado, com ajustes registrados e validação pedagógica ou do cliente. | O briefing define validação como critério de sucesso, mas não registra revisão nem aprovação realizadas. | ⬜ Pendente |
+| **70%** | Estrutura front-end | As seis páginas implementadas em HTML, com navegação e conteúdo estrutural funcionando. | HTML consta como responsabilidade e ferramenta, mas o `index.html` inspecionado ainda contém apenas a estrutura inicial vazia. | ⬜ Pendente |
+| **80%** | Estilização e responsividade | CSS aplicado à identidade visual e páginas adaptadas às principais larguras de tela. | CSS está previsto na divisão de responsabilidades, mas não há implementação inspecionada. | ⬜ Pendente |
+| **90%** | Interações e revisão funcional | Interações previstas implementadas e testadas; fluxo principal e comportamento responsivo revisados. | JavaScript está previsto, mas não há funcionalidades ou testes registrados como concluídos. | ⬜ Pendente |
+| **100%** | Entrega final validada | Protótipo e site funcional entregues; requisitos revisados e aprovação pedagógica e/ou do cliente registrada. | Não há evidência de entrega final, testes, revisão por todos os integrantes ou aprovação. | ⬜ Pendente |
+
+**Próximas ações para concluir o marco atual e avançar:**
+
+1. Definir e registrar a fonte para textos pequenos.
+2. Selecionar as imagens dos tênis e documentar a análise das referências visuais.
+3. Detalhar o conteúdo e as funcionalidades esperadas para cada uma das seis páginas.
+4. Revisar o Figma e registrar quais telas e fluxos estão prontos antes de considerar o protótipo como evidência de conclusão.
+
+As caixas do checklist acima não estão marcadas como concluídas; por isso, seus itens não foram tratados como comprovação de validação.
