@@ -1,0 +1,217 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    color: #111;
+}
+
+.topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: white;
+}
+
+.logo {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.logo span {
+    color: #852cfb;
+}
+
+nav a {
+    margin: 10px;
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.botao {
+    display: inline-block;
+    background: #852cfb;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.hero, .secao {
+    padding: 50px 8%;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    background: white;
+}
+
+h1 {
+    font-size: 40px;
+    margin: 15px 0;
+}
+
+h2 {
+    margin: 15px 0;
+}
+
+h1 span, h2 span {
+    color: #852cfb;
+}
+
+.tag {
+    color: #852cfb;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.hero-imagem, .preview {
+    background: #e5e5e5;
+    padding: 40px;
+    text-align: center;
+}
+
+.grade-modelos {
+    display: flex;
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.modelo-card {
+    background: white;
+    padding: 15px;
+    flex: 1;
+}
+
+.produto {
+    height: 130px;
+    margin-bottom: 15px;
+    background: #eee;
+}
+
+.produto-roxo {
+    background: #e8d9ff;
+}
+
+.produto-cinza {
+    background: #ddd;
+}
+
+.produto-branco {
+    background: white;
+    border: 1px solid #eee;
+}
+
+.modelo-card p, .secao p {
+    margin: 10px 0;
+}
+
+.botao-card {
+    background: black;
+    color: white;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+}
+
+.personalizar, .marca, .contato, .novidades {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.personalizar-texto, .marca-texto, .contato > div,
+.contato form, .novidades > div {
+    flex: 1;
+}
+
+input, select, textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0 15px;
+    border: 1px solid #ccc;
+}
+
+.cores {
+    display: flex;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.cor {
+    width: 30px;
+    height: 30px;
+    background: var(--cor);
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.selecionada {
+    outline: 2px solid #852cfb;
+}
+
+.marca-simbolo {
+    background: #852cfb;
+    color: black;
+    padding: 50px;
+    font-size: 40px;
+}
+
+.preview {
+    flex: 1;
+}
+
+footer {
+    background: black;
+    color: white;
+    padding: 25px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.link {
+    color: #852cfb;
+    text-decoration: none;
+}
+
+@media (max-width: 700px) {
+    .topo, .hero, .personalizar, .marca,
+    .contato, .novidades {
+        flex-direction: column;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .grade-modelos {
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
