@@ -1,19 +1,125 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sneakers Toon | Exclusivo como seu caminhar</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-<ul>
-    <li><a href="contato.html">Contato</a></li>
-    <li><a >Início</a></li>
-</ul>
-    </header>
-    <main>
+  <header class="topo">
+    <a class="logo" href="#inicio"><span>S</span>NEAKERS<br><small>TOON</small></a>
+    <nav>
+      <a href="#inicio">Início</a>
+      <a href="#modelos">Modelos</a>
+      <a href="#personalizar">Personalize</a>
+      <a href="#marca">Nossa história</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <a class="botao pequeno" href="#personalizar">Criar meu tênis</a>
+  </header>
 
-    </main>
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-texto">
+        <p class="tag">SEU ESTILO, SUAS REGRAS</p>
+        <h1>EXCLUSIVO<br>COMO SEU<br><span>CAMINHAR.</span></h1>
+        <p>Crie um tênis que tenha a sua cara. Escolha cores, detalhes e mostre ao mundo o seu estilo.</p>
+        <div class="acoes">
+          <a class="botao" href="#personalizar">Personalizar agora</a>
+          <a class="link" href="#modelos">Ver modelos →</a>
+        </div>
+      </div>
+      <div class="hero-imagem">
+        <div class="selo">SEU<br>ESTILO<br><b>✦</b></div>
+        <div class="tenis-ilustrado" aria-label="Ilustração estilizada de um tênis" role="img">
+          <div class="sola"></div><div class="corpo-tenis"></div><div class="bico"></div>
+          <div class="lingua"></div><div class="cadarco c1"></div><div class="cadarco c2"></div><div class="cadarco c3"></div>
+          <div class="marca-tenis">ST</div>
+        </div>
+        <p class="imagem-legenda">UM MODELO. MIL POSSIBILIDADES.</p>
+      </div>
+    </section>
+
+    <section class="secao" id="modelos">
+      <div class="cabecalho-secao">
+        <div><p class="tag">ESCOLHA O SEU</p><h2>Modelos em destaque<span>.</span></h2></div>
+        <p>Encontre a base perfeita para começar a criar.</p>
+      </div>
+      <div class="grade-modelos">
+        <article class="modelo-card">
+          <div class="produto produto-roxo"><div class="mini-tenis"></div><span class="numero">01</span></div>
+          <h3>Urban Classic</h3><p>Clássico, versátil e cheio de atitude.</p><button class="botao-card" data-modelo="Urban Classic">Personalizar →</button>
+        </article>
+        <article class="modelo-card">
+          <div class="produto produto-cinza"><div class="mini-tenis tenis-claro"></div><span class="numero">02</span></div>
+          <h3>Street Flow</h3><p>Conforto para acompanhar seu ritmo.</p><button class="botao-card" data-modelo="Street Flow">Personalizar →</button>
+        </article>
+        <article class="modelo-card">
+          <div class="produto produto-branco"><div class="mini-tenis tenis-escuro"></div><span class="numero">03</span></div>
+          <h3>Toon Original</h3><p>Um visual diferente para se destacar.</p><button class="botao-card" data-modelo="Toon Original">Personalizar →</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="personalizar secao" id="personalizar">
+      <div class="personalizar-texto">
+        <p class="tag">COLOQUE SUA IDENTIDADE</p>
+        <h2>Monte uma combinação<br>que tenha a sua cara<span>.</span></h2>
+        <p>Escolha seu modelo e uma cor para imaginar como será seu próximo tênis.</p>
+        <label for="modelo">Modelo</label>
+        <select id="modelo">
+          <option>Urban Classic</option><option>Street Flow</option><option>Toon Original</option>
+        </select>
+        <label for="cor">Cor principal</label>
+        <div class="cores">
+          <button class="cor selecionada" data-cor="#852cfb" style="--cor:#852cfb" aria-label="Roxo"></button>
+          <button class="cor" data-cor="#f5f5f5" style="--cor:#f5f5f5" aria-label="Branco"></button>
+          <button class="cor" data-cor="#111111" style="--cor:#111111" aria-label="Preto"></button>
+          <button class="cor" data-cor="#49b6a5" style="--cor:#49b6a5" aria-label="Verde-água"></button>
+          <button class="cor" data-cor="#ff6b8a" style="--cor:#ff6b8a" aria-label="Rosa"></button>
+        </div>
+        <button class="botao" id="salvar">Salvar minha ideia</button>
+        <p class="aviso" id="aviso" aria-live="polite"></p>
+      </div>
+      <div class="preview">
+        <div class="preview-topo"><span>PRÉVIA DO SEU TÊNIS</span><span>● PERSONALIZÁVEL</span></div>
+        <div class="tenis-ilustrado tenis-preview" id="tenisPreview">
+          <div class="sola"></div><div class="corpo-tenis"></div><div class="bico"></div>
+          <div class="lingua"></div><div class="cadarco c1"></div><div class="cadarco c2"></div><div class="cadarco c3"></div>
+          <div class="marca-tenis">ST</div>
+        </div>
+        <h3 id="nomePreview">Urban Classic</h3>
+        <p>A sua criatividade é o limite.</p>
+      </div>
+    </section>
+
+    <section class="marca secao" id="marca">
+      <div class="marca-simbolo">ST<span>✦</span></div>
+      <div class="marca-texto"><p class="tag">MAIS QUE UM TÊNIS</p><h2>Seu caminho.<br>Suas escolhas<span>.</span></h2>
+        <p>A Sneakers Toon nasceu da vontade de sair do comum. Acreditamos que cada pessoa tem seu próprio jeito de caminhar — e o tênis pode mostrar isso. Por isso, queremos transformar modelos do dia a dia em peças com a sua identidade.</p>
+        <a class="link" href="#personalizar">Faça parte dessa ideia →</a>
+      </div>
+    </section>
+
+    <section class="contato secao" id="contato">
+      <div><p class="tag">VAMOS CONVERSAR</p><h2>Fale com a<br>Sneakers Toon<span>.</span></h2><p>Envie sua mensagem ou acompanhe as novidades da marca.</p></div>
+      <form id="formContato">
+        <label for="nome">Seu nome</label><input id="nome" type="text" placeholder="Como podemos te chamar?" required>
+        <label for="email">Seu e-mail</label><input id="email" type="email" placeholder="voce@email.com" required>
+        <label for="mensagem">Mensagem</label><textarea id="mensagem" rows="3" placeholder="Escreva sua mensagem..." required></textarea>
+        <button class="botao" type="submit">Enviar mensagem</button>
+        <p class="aviso" id="avisoContato" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <section class="novidades secao">
+      <div><p class="tag">FIQUE POR DENTRO</p><h2>Novidades<span>.</span></h2><p>Ideias novas, modelos e inspirações para o seu próximo passo.</p></div>
+      <div class="novidade-itens"><article><span>01 / INSPIRAÇÃO</span><h3>Seu estilo não tem manual.</h3><p>Experimente combinações e crie sem medo.</p></article><article><span>02 / LANÇAMENTOS</span><h3>Novos modelos a caminho.</h3><p>Fique de olho nas próximas novidades.</p></article><article><span>03 / COMUNIDADE</span><h3>Mostre seu jeito de caminhar.</h3><p>Compartilhe suas ideias com a gente.</p></article></div>
+    </section>
+  </main>
+
+  <footer><a class="logo" href="#inicio"><span>S</span>NEAKERS <small>TOON</small></a><p>Exclusivo como seu caminhar.</p><p>© 2026 Sneakers Toon</p></footer>
+  <script src="script.js"></script>
 </body>
 </html>
